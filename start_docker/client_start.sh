@@ -17,7 +17,7 @@ docker exec -itu 0 "$CONTAINER_ID" indy-cli /home/indy/make_pool.txt
 # docker exec -iu 0 "$CONTAINER_ID" git init /home/indy/
 # docker exec -iu 0 "$CONTAINER_ID" git config core.sparseCheckout true
 # docker exec -iu 0 "$CONTAINER_ID" echo "in_docker" >> /home/indy/.git/info/sparse-checkout
-docker exec -iu 0 "$CONTAINER_ID" git pull https://"$git_email":"$git_passwd"@github.com/beenee010/Blockchain_Capstone_Indy.git
+docker exec -iu 0 "$CONTAINER_ID" git pull https://"$git_email":"$git_passwd"@github.com/Univ-Pass/Upass_Indy_Network.git
 docker exec -iu 0 "$CONTAINER_ID" cp -r /home/indy/in_docker/. /home/indy/
 
 echo "<< Process End >>\n"
