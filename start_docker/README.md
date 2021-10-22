@@ -6,7 +6,7 @@ docker build -t client_docker .
 
 docker images # 제대로 이미지가 만들어 졌는지 확인
 
-sh ./client_start.sh "docker_image"
+sh ./client_start.sh "docker_image" "Github ID" "Github PW"
 
 docker ps # 도커 컨테이너가 제대로 실행이 되었는지 확인
 
