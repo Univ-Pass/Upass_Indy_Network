@@ -19,6 +19,6 @@ docker cp "$name":/home/indy/"${student_id}"_check_attrib.json /home/deploy
 echo "[Log File Copy Docker to Server]"
 
 # echo "[Log File Remove From 'Docker']"
-docker exec -iu 0 "${name}" rm /home/indy/"${student_id}"_check_attrib.json
+# docker exec -iu 0 "${name}" rm /home/indy/"${student_id}"_check_attrib.json
 
 echo "<< Process End >>\n"

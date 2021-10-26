@@ -3,14 +3,14 @@
 # set -e
 
 did="$1"
-# seed="$2"
-wallet_name="$2"
-wallet_key="$3"
+seed="$2"
+wallet_name="$3"
+wallet_key="$4"
 
 new_wallet_command="${did}_master_wallet_command.txt"
 
-python3 export_master_did.py "${did}"
-# python3 export_master_did.py "${did}" "${seed}"
+# python3 export_master_did.py "${did}"
+python3 export_master_did.py "${did}" "${seed}"
 
 echo "<< Process Start >>\n"
 
